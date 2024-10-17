@@ -15,22 +15,39 @@ public class Main {
         //we don't need to create an object since Math class is static
         // ClassName.methodName(); e.g. Math.random()
         // ClassName.staticVariableName(); e.g. Math.PI
-
+    double myPI = Math.PI;
         // abs
-
+        System.out.println(Math.abs(-1));
         // pow
-
+        System.out.println(Math.pow(3,3));
         // sqrt
+        System.out.println(Math.sqrt(80));
 
 
 
         //create a random number in the range [0,1)
-
+        System.out.println(Math.random());
         //create a random number in the range [0, n)
+        //example: [0,6)
+        System.out.println(Math.round(Math.random()*6));
 
-        // create a random number in the range [0,n]
+        // 1) create a random integer in the range [m,n]
+        int m = 33;
+        int n = 97;
 
-        // create a random number in the range [m,n]
+        System.out.println((int)(Math.round(Math.random()*(n-m)+m)));
+
+        // 2) create a random negative integer in the range [-m,0]
+
+        System.out.println((int)(Math.round(Math.random()*(-1)*(m))));
+
+        // 3) create a random negative integer in the range [-m,-n]
+
+        System.out.println((int)(-1*(Math.round(Math.random()*(n-m)+m))));
+
+        // 4) create a random negative integer in the range [-m,n]
+
+        System.out.println((int)(Math.round(Math.random()*(n+m)-m)));
 
 
 
