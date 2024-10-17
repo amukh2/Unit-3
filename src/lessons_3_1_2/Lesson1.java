@@ -15,6 +15,8 @@ public class Lesson1 {
         //
 
         // is x greater than y? store result in boolean variable
+        boolean xBiggerThanY = x>y;
+        System.out.println(xBiggerThanY);
 
 
         //which two rectangles are the same?

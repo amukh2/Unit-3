@@ -55,12 +55,20 @@ public class Main {
         //This is not static so we have to create a Random object
 
         //create a Random object
+        Random randObj = new Random();
 
         //get int with and without bound
+        int randInt = randObj.nextInt();
+        System.out.println(randInt);
+        int randIntSmaller = randObj.nextInt(100);
+        System.out.println(randIntSmaller);
 
         // get double
+        double randDouble = randObj.nextDouble();
+        System.out.println(randDouble);
 
-
+        double randDouble2 = randObj.nextDouble(50,100);
+        System.out.println(randDouble2);
 
 
 
